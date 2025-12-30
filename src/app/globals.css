@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Formal Professional Palette */
+  --background: #0f1115;
+  /* Clean Dark */
+  --foreground: #f8fafc;
+  /* Pure White */
+
+  --primary: #3b82f6;
+  /* Trustworthy Blue */
+  --primary-glow: rgba(59, 130, 246, 0.4);
+
+  --accent: #64748b;
+  /* Slate Grey */
+
+  --surface: #1e293b;
+  /* Professional Slate */
+  --surface-border: rgba(255, 255, 255, 0.08);
+
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-sans);
+  /* Unify fonts for formal look */
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+.serif {
+  font-family: var(--font-sans);
+  /* Force Sans-serif */
+  letter-spacing: -0.02em;
+  /* Tighter, more modern tracking */
+  font-weight: 600;
+}
+
+/* Minimal Glass Panel */
+.glass-panel {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  /* Standard professional radius */
+  box-shadow: var(--card-shadow);
+}
+
+.title-gradient {
+  color: #fff;
+  /* Solid white for formal look */
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+
+.section-spacing {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
